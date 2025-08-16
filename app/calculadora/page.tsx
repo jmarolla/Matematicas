@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { MCDCalculator } from "@/components/calculators/mcd-calculator"
 import { MCMCalculator } from "@/components/calculators/mcm-calculator"
