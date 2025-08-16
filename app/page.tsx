@@ -76,6 +76,150 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Sección educativa con video */}
+        <section className="py-16 px-4 bg-gradient-to-r from-purple-50 to-pink-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-4 text-gray-800">📚 Aprende los Conceptos</h2>
+              <p className="text-xl text-gray-600">Mira este video explicativo y domina MCM y MCD</p>
+            </div>
+
+            {/* Video de YouTube */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <div className="bg-white rounded-2xl shadow-xl p-6">
+                <div className="aspect-video rounded-xl overflow-hidden">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/VKjij2n9l8Y"
+                    title="MCM y MCD - Explicación completa"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  ></iframe>
+                </div>
+                <div className="mt-4 text-center">
+                  <p className="text-gray-600">Video educativo: "Máximo Común Divisor y Mínimo Común Múltiplo"</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Métodos de cálculo */}
+            <div className="grid lg:grid-cols-2 gap-8">
+              {/* Método para MCD */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-2xl">🔍</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-green-800">Cómo calcular MCD</h3>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="bg-green-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-green-800 mb-2">Método 1: Factorización Prima</h4>
+                    <ol className="list-decimal list-inside text-gray-700 space-y-1">
+                      <li>Descompón cada número en factores primos</li>
+                      <li>Identifica los factores comunes</li>
+                      <li>Multiplica los factores comunes con menor exponente</li>
+                    </ol>
+                  </div>
+
+                  <div className="bg-green-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-green-800 mb-2">Método 2: Algoritmo de Euclides</h4>
+                    <ol className="list-decimal list-inside text-gray-700 space-y-1">
+                      <li>Divide el mayor entre el menor</li>
+                      <li>Reemplaza el mayor por el menor y el menor por el residuo</li>
+                      <li>Repite hasta que el residuo sea 0</li>
+                    </ol>
+                  </div>
+
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <p className="text-sm text-gray-600 mb-2">Ejemplo: MCD(48, 18)</p>
+                    <div className="font-mono text-sm space-y-1">
+                      <p>48 ÷ 18 = 2 residuo 12</p>
+                      <p>18 ÷ 12 = 1 residuo 6</p>
+                      <p>12 ÷ 6 = 2 residuo 0</p>
+                      <p className="font-bold text-green-700">MCD = 6</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Método para MCM */}
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-2xl">🔢</span>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-800">Cómo calcular MCM</h3>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-blue-800 mb-2">Método 1: Factorización Prima</h4>
+                    <ol className="list-decimal list-inside text-gray-700 space-y-1">
+                      <li>Descompón cada número en factores primos</li>
+                      <li>Toma todos los factores primos</li>
+                      <li>Multiplica cada factor con su mayor exponente</li>
+                    </ol>
+                  </div>
+
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <h4 className="font-semibold text-blue-800 mb-2">Método 2: Fórmula con MCD</h4>
+                    <div className="text-center py-2">
+                      <p className="text-lg font-mono bg-white rounded px-4 py-2 inline-block">
+                        MCM(a,b) = (a × b) ÷ MCD(a,b)
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <p className="text-sm text-gray-600 mb-2">Ejemplo: MCM(12, 18)</p>
+                    <div className="font-mono text-sm space-y-1">
+                      <p>12 = 2² × 3</p>
+                      <p>18 = 2 × 3²</p>
+                      <p>MCM = 2² × 3² = 4 × 9</p>
+                      <p className="font-bold text-blue-700">MCM = 36</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Consejos útiles */}
+            <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-3xl">💡</span>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800">Consejos para Recordar</h3>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-yellow-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-yellow-800 mb-2">MCD (Máximo Común Divisor)</h4>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Es el número más GRANDE que divide a ambos</li>
+                    <li>• Siempre es menor o igual al número más pequeño</li>
+                    <li>• Útil para simplificar fracciones</li>
+                  </ul>
+                </div>
+
+                <div className="bg-yellow-50 rounded-lg p-4">
+                  <h4 className="font-semibold text-yellow-800 mb-2">MCM (Mínimo Común Múltiplo)</h4>
+                  <ul className="text-gray-700 space-y-1">
+                    <li>• Es el número más PEQUEÑO que es múltiplo de ambos</li>
+                    <li>• Siempre es mayor o igual al número más grande</li>
+                    <li>• Útil para sumar fracciones con diferente denominador</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Sección de conceptos básicos */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
