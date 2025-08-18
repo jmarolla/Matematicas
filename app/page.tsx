@@ -91,7 +91,7 @@ export default function HomePage() {
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/VKjij2n9l8Y"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                     title="MCM y MCD - Explicación completa"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -100,7 +100,9 @@ export default function HomePage() {
                   ></iframe>
                 </div>
                 <div className="mt-4 text-center">
-                  <p className="text-gray-600">Video educativo: "Máximo Común Divisor y Mínimo Común Múltiplo"</p>
+                  <p className="text-gray-600">
+                    Video educativo: "Máximo Común Divisor y Mínimo Común Múltiplo - Explicación paso a paso"
+                  </p>
                 </div>
               </div>
             </div>
