@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { ExerciseSystem } from "@/components/exercises/exercise-system"
 import { BookOpen, Target, Star } from "lucide-react"

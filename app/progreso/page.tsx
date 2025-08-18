@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { ProgressDashboard } from "@/components/progress/progress-dashboard"
 import { Trophy } from "lucide-react"

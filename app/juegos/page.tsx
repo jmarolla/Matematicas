@@ -1,3 +1,5 @@
+"use client"
+
 import { Navigation } from "@/components/navigation"
 import { GameSelector } from "@/components/games/game-selector"
 import { Gamepad2, Star, Trophy } from "lucide-react"
